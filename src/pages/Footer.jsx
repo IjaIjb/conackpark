@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="bg-[#1a3783] pt-10">
         <div className="max-w-screen-xl  px-5 lg:px-14  pb-8 mx-auto ">
           <div className="md:flex justify-evenly ">
-            <div className="text-start">
+            <div className="text-start md:mb-0 mb-10">
               <h3 className="text-white text-[16px] font-[600] pb-5 ">
 CHURCH OF THE NATIVITY
               </h3>
@@ -28,9 +28,11 @@ CHURCH OF THE NATIVITY
                 </div>
 
                 <div className="flex gap-2">
-                <IoCall />
-                  <h6 className="text-[12px]">209300490</h6>
-                </div>
+  <IoCall />
+  <a href="tel:+2348034769466" className="text-[12px]">
+    0803 4769 466
+  </a>
+</div>
 
                 <div className="flex gap-2">
                 <MdEmail />
@@ -61,12 +63,12 @@ CHURCH OF THE NATIVITY
               </div>
             </div>
 
-            <div className="md:text-start">
+            <div className="md:text-start md:mb-0 mb-10">
               <h3 className="text-white text-[16px] font-[600] pb-5 ">
                 WEEKLY MEETINGS
               </h3>
               <div className="flex flex-col ">
-                <h3 className="text-white text-[14px] font-[600]  ">SUNDAYS</h3>
+                <h3 className="text-white text-[14px] font-[600]  ">SUNDAYS:</h3>
 
                 <h6 className="text-[12px] text-white mt-1">
                   7am – Holy Communion Service
@@ -90,7 +92,7 @@ CHURCH OF THE NATIVITY
                 <h6 className="text-white text-[12px] mt-1">
                 Every other Sunday immediately after service
                 </h6>
-                <h3 className="text-white text-[20px] mt-1 font-[600]">
+                <h3 className="text-white text-[12px] mt-1 font-[600]">
                 Men's Fellowship:
                 </h3>
                 <h6 className="text-white text-[12px] mt-1">
@@ -107,13 +109,13 @@ CHURCH OF THE NATIVITY
                 {/* <h3 className="text-white text-[12px] font-[600]  ">SUNDAYS</h3> */}
 
                 <h3 className="text-white text-[12px] mt-1 font-[600]">
-              TUESDAY
+              TUESDAYS:
                 </h3>
                 <h6 className="text-[12px] text-white mt-1 ">
                   7am – Choir Practice	
                 </h6>
                 <h3 className="text-white text-[12px] mt-1 font-[600]">
-                Wednesday:
+                WEDNESDAY:
                 </h3>
                 <h6 className="text-[12px] text-white mt-1 ">
                   7am – Holy Communion Service
@@ -126,20 +128,20 @@ CHURCH OF THE NATIVITY
                 </h6>
 
                 <h3 className="text-white text-[12px] mt-1 font-[600]">
-                Thursday:
+                THURSDAYS:
                 </h3>
                 <h6 className="text-[12px] text-white mt-1 ">
                   6pm – Bible Study	
                 </h6>
                 <h3 className="text-white text-[12px] mt-1 font-[600]">
-                 Fridays
+                FRIDAYS:
                 </h3>
                 <h6 className="text-[12px] text-white mt-1 ">
                   11pm – Vigil Holds last Friday of every month	
                 </h6>
 
                 <h3 className="text-white text-[12px] mt-1 font-[600]">
-                Saturday:
+                SATURDAYS:
                 </h3>
                 <h6 className="text-[12px] text-white mt-1 ">
                   8am – Intercessory Ministry	
