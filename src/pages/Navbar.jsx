@@ -3,7 +3,9 @@ import { Transition } from "@headlessui/react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaHouseChimney } from "react-icons/fa6";
 import logo from "../assets/Church_Logo_2-removebg-preview.png";
-
+import { FaCross, FaHandHoldingHeart, FaHeart, FaMoneyCheck } from "react-icons/fa";
+import { BiSolidOffer } from "react-icons/bi";
+import { IoPersonAddSharp } from "react-icons/io5";
 
 const Navbar = () => {
 
@@ -16,14 +18,15 @@ const Navbar = () => {
   return (
        <div>
      
-      <nav class="bg-white fixed w-full z-20 top-0 left-0 shadow-md px-2 md:px-4 py-2 body-font font-poppins ">
+      <nav class="bg-white fixed w-full z-20 top-0 left-0 shadow-md  py-4 body-font font-poppins ">
         <div class="flex justify-between items-center md:justify-between w-full px-4 mx-auto lg:px-5">
           {/* <div className="flex justify-between"> */}
           <NavLink to="/" class="">
           <img className="w-14 h-14" src={logo} alt="/" />
 
           </NavLink>
-          <div className=" md:order-2 pl-44 md:pl-1 pr-8 pt-4">
+          <div className="md:hidden ">
+          <div className=" md:order-2 pl-44 md:pl-1  pt-4">
             <button
               onClick={() => setIsOpen(!isOpen)}
               data-collapse-toggle="mobile-menu-2"
@@ -60,48 +63,89 @@ const Navbar = () => {
               )}
             </button>
           </div>
-         
+          </div>
           <div
-            className="items-center justify-between gap-10 hidden w-full md:flex md:w-auto "
+            className="items-center justify-between  hidden w-full md:flex md:w-auto "
             id="navbar-sticky"
           >
-            <div className="flex flex-col mt-5 font-medium gap-6 items-center md:flex-row lg:space-x-3 lg:mt-3">
+            <div className="flex flex-col mt-5 font-medium md:gap-1 lg:gap-7 items-center md:flex-row  lg:mt-3">
               <NavLink
                 to="/"
-                className=" py-1 px-2  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal hover:font-semibold leading-5   "
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
                 style={({ isActive }) =>
                   isActive
                     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
-                    : { color: "#ffffff" }
+                    : { color: "#ffffff", color: "#0d1c43" }
                 }
               >
                 <FaHouseChimney />
                 Home
               </NavLink>
 
-       
               <div
-                className=" flex space-x-2 text-[#1a3783] py-2 pr-4  text-sm tracking-wider font-normal hover:font-semibold leading-5  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#3f71a8] lg:pb-5 "
+                // to="/"
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
                 // style={({ isActive }) =>
                 //   isActive
-                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#0d1c43" }
-                //     : { color: "#ffffff" }
+                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
+                //     : { color: "#ffffff", color: "#0d1c43" }
                 // }
               >
-                Gift
+               <FaCross />
+              About
+              </div>
+
+              <NavLink
+                to="/give"
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
+                style={({ isActive }) =>
+                  isActive
+                    ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
+                    : { color: "#ffffff", color: "#0d1c43" }
+                }
+              >
+              <FaHandHoldingHeart />
+               Give
+              </NavLink>
+
+              <div
+                // to="/"
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
+                // style={({ isActive }) =>
+                //   isActive
+                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
+                //     : { color: "#ffffff", color: "#0d1c43" }
+                // }
+              >
+                <FaHeart />
+                Care&nbsp;&&nbsp;Ministries
               </div>
           
               <div
-                className=" flex space-x-2 text-[#1a3783] py-2 pr-4 text-sm tracking-wider font-normal hover:font-semibold leading-5  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#3f71a8] lg:pb-5 "
+                // to="/"
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
                 // style={({ isActive }) =>
                 //   isActive
-                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#0d1c43" }
-                //     : { color: "#ffffff" }
+                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
+                //     : { color: "#ffffff", color: "#0d1c43" }
                 // }
               >
-                About&nbsp;Us
+               <FaMoneyCheck />
+             Resources
               </div>
              
+              <div
+                // to="/"
+                className=" py-2 px-4  text-sm text-center tracking-wider flex justify-center gap-2 items-center font-normal rounded-md hover:font-semibold leading-5   "
+                // style={({ isActive }) =>
+                //   isActive
+                //     ? { color: "#ffffff", fontWeight: "600", backgroundColor: "#1a3783" }
+                //     : { color: "#ffffff", color: "#0d1c43" }
+                // }
+              >
+               <IoPersonAddSharp />
+            Contact
+              </div>
       
 
          
@@ -135,7 +179,7 @@ const Navbar = () => {
                 </NavLink>
               </div> */}
           </div>
-          <div className=""></div>
+          {/* <div className=""></div> */}
         </div>
         <Transition
           show={isOpen}
@@ -148,10 +192,10 @@ const Navbar = () => {
         >
           {(ref) => (
             <div
-              className="lg:hidden bg-white w-full pl-6 pr-4 h-screen mt-3"
+              className="lg:hidden z-50 bg-white w-full pl-6 pr-4 h-screen mt-3"
               id="mobile-menu"
             >
-              <div ref={ref} className=" pt-10 pb-3 space-y-1">
+              <div ref={ref} className=" z-50 pt-10 pb-3 space-y-1">
                 <NavLink
                   to="/"
                   onClick={() => setIsOpen(!isOpen)}
@@ -161,7 +205,51 @@ const Navbar = () => {
                 </NavLink>
                 <hr className="pb-3" />
 
+                <div
+                  // to="/"
+                  // onClick={() => setIsOpen(!isOpen)}
+                  className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
+                >
+                About
+                </div>
+                <hr className="pb-3" />
+
+                <div
+                  // to="/"
+                  // onClick={() => setIsOpen(!isOpen)}
+                  className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
+                >
+              Give
+                </div>
+                <hr className="pb-3" />
+
+
+                <div
+                  // to="/"
+                  // onClick={() => setIsOpen(!isOpen)}
+                  className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
+                >
+            Care&nbsp;&&nbsp;Ministries
+                </div>
+                <hr className="pb-3" />
             
+                <div
+                  // to="/"
+                  // onClick={() => setIsOpen(!isOpen)}
+                  className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
+                >
+             Resources
+                </div>
+                <hr className="pb-3" />
+
+                <div
+                  // to="/"
+                  // onClick={() => setIsOpen(!isOpen)}
+                  className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
+                >
+           Contact
+                </div>
+                <hr className="pb-3" />
                 {/* <NavLink
                   to="/blog"
                   onClick={() => setIsOpen(!isOpen)}
@@ -180,15 +268,7 @@ const Navbar = () => {
                   Contact Us
                 </NavLink> */}
 
-                <NavLink
-                  to="/about-us"
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="block text-[#616161] py-2 font-medium hover:bg-gray-100"
-                >
-                  About Us
-                </NavLink>
-                <hr className="pb-3" />
-
+          
        
                 {/* <NavLink
                   to="/afripay"

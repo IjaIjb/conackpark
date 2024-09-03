@@ -9,7 +9,7 @@ import picv3 from "../../assets/DSC_4130.JPG";
 import "react-multi-carousel/lib/styles.css";
 import Marquee from "react-fast-marquee";
 import Footer from "../Footer";
-import rev from "../../assets/WhatsApp_Image_2024-08-28_at_04.38.29_01bba680-removebg-preview.png";
+import rev from "../../assets/DSC_9761-removebg-preview.png";
 
 
 const Home = () => {
@@ -88,7 +88,7 @@ const Home = () => {
           <div className="md:grid hidden md:grid-cols-12 gap-12">
             <div className="col-span-4 ">
              <div className="flex justify-center text-center">
-              <img className="flex justify-center text-center" src={rev} alt="/" />
+              <img className="flex justify-center text-center  " src={rev} alt="/" />
               </div>
               <div className="flex mt-2 justify-center">
 <i className="text-[20px] font-[600]">Ven. Abiodun O. Popoola</i>
