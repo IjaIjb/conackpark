@@ -214,13 +214,13 @@ const Navbar = () => {
                 </div>
                 <hr className="pb-3" />
 
-                <div
-                  // to="/"
+              <NavLink
+                  to="/give"
                   // onClick={() => setIsOpen(!isOpen)}
                   className="block text-[#616161] py-3 font-bold hover:bg-gray-100"
                 >
               Give
-                </div>
+                </NavLink>
                 <hr className="pb-3" />
 
 

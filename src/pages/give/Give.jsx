@@ -21,7 +21,7 @@ const Give = () => {
 
 
       <div>
-        <div className='flex  max-w-screen-xl  px-8 lg:px-14  pb-8 mx-auto'>
+        <div className='flex  max-w-screen-xl  px-3 lg:px-14  pb-8 mx-auto'>
        <div className='pt-10'>
         <h4 className="text-[#801515]  pt-6  text-[18px] md:text-[24px] font-[500]">
            E-PAYMENTS DETAILS
