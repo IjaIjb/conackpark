@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import pic from "../../assets/DSC_4107.JPG";
 import picv from "../../assets/DSC_4112.JPG";
 import picv1 from "../../assets/DSC_4113.JPG";
-import picv2 from "../../assets/flier.jpg";
+import picv2 from "../../assets/WhatsApp Image 2024-10-28 at 21.57.18_ced34674.jpg";
 import picv3 from "../../assets/DSC_4130.JPG";
 import "react-multi-carousel/lib/styles.css";
 import Marquee from "react-fast-marquee";
